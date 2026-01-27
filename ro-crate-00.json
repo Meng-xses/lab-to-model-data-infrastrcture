@@ -9,68 +9,66 @@
       "schema": "https://schema.org/",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "ex": "http://example.org/kb/",
-      "id": "@id",
-      "type": "@type"
+      "ex": "http://example.org/kb/"
     }
   ],
   "@graph": [
     {
-      "id": "ro-crate-00.json",
-      "type": "CreativeWork",
-      "conformsTo": { "id": "https://w3id.org/ro/crate/1.2" },
-      "about": { "id": "./" }
+      "@id": "ro-crate-00.json",
+      "@type": "CreativeWork",
+      "conformsTo": { "@id": "https://w3id.org/ro/crate/1.2" },
+      "about": { "@id": "./" }
     },
     {
-      "id": "./",
-      "type": "Dataset",
+      "@id": "./",
+      "@type": "Dataset",
       "name": "CC0-0.0",
       "description": "Semantic one-row time-flowrate data for ZnO production with K1-ractor-system",
       "datePublished": "2026-01-27",
-      "hasPart": [ { "id": "ex:XK212-GMS-1-1reaction" } ]
+      "hasPart": [ { "@id": "ex:XK212-GMS-1-1reaction" } ]
     },
     {
-      "id": "ex:XK212-GMS-1-1reaction",
-      "type": "oce:Experiment",
-      "schema:isBasedOn": { "id": "ex:GMS_Reaction" },
-      "oce:hasApparatus": { "id": "ex:K1_Reaction_System" },
-      "oce:hasDataGroup": { "id": "ex:DG_Flow_Time" }
+      "@": "ex:XK212-GMS-1-1reaction",
+      "@type": "oce:Experiment",
+      "schema:isBasedOn": { "@id": "ex:GMS_Reaction" },
+      "oce:hasApparatus": { "@id": "ex:K1_Reaction_System" },
+      "oce:hasDataGroup": { "@id": "ex:DG_Flow_Time" }
     },
     {
-      "id": "ex:GMS_Reaction",
-      "type": "or:ReactionExperiment",
+      "@id": "ex:GMS_Reaction",
+      "@type": "or:ReactionExperiment",
       "or:hasInputChemical": [
-        { "id": "ex:Reagent_A", "rdfs:label": "ZnNO3 0.1M" },
-        { "id": "ex:Reagent_B", "rdfs:label": "KOH 0.21M" }
+        { "@id": "ex:Reagent_A", "rdfs:label": "ZnNO3 0.1M" },
+        { "@id": "ex:Reagent_B", "rdfs:label": "KOH 0.21M" }
       ]
     },
     {
-      "id": "ex:FlowRate_A",
-      "type": ["oce:VolumetricFlowRate", "sosa:ObservableProperty"],
-      "om:hasUnit": { "id": "om:litrePerMinute", "rdfs:label": "L/min" }
+      "@id": "ex:FlowRate_A",
+      "@type": ["oce:VolumetricFlowRate", "sosa:ObservableProperty"],
+      "om:hasUnit": { "@id": "om:litrePerMinute", "rdfs:label": "L/min" }
     },
     {
-      "id": "ex:ReactionTime",
-      "type": "oce:Time",
-      "om:hasUnit": { "id": "om:second-Time", "rdfs:label": "second" }
+      "@id": "ex:ReactionTime",
+      "@type": "oce:Time",
+      "om:hasUnit": { "@id": "om:second-Time", "rdfs:label": "second" }
     },
     {
-      "id": "ex:DP_Time_0",
-      "type": "oce:DataPoint",
+      "@id": "ex:DP_Time_0",
+      "@type": "oce:DataPoint",
       "oce:hasValue": {
-        "id": "ex:Val_Time_0",
-        "type": "oce:X",
-        "oce:refersTo": { "id": "ex:ReactionTime" },
+        "@id": "ex:Val_Time_0",
+        "@type": "oce:X",
+        "oce:refersTo": { "@id": "ex:ReactionTime" },
         "oce:hasValue": { "@value": "0", "@type": "xsd:double" }
       }
     },
     {
-      "id": "ex:DP_Flow_0",
-      "type": "oce:DataPoint",
+      "@id": "ex:DP_Flow_0",
+      "@type": "oce:DataPoint",
       "oce:hasValue": {
-        "id": "ex:Val_Flow_0",
-        "type": "oce:X",
-        "oce:refersTo": { "id": "ex:FlowRate_A" },
+        "@id": "ex:Val_Flow_0",
+        "@type": "oce:X",
+        "oce:refersTo": { "@id": "ex:FlowRate_A" },
         "oce:hasValue": { "@value": "0.0", "@type": "xsd:double" }
       }
     }
