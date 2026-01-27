@@ -84,10 +84,10 @@
     {
       "id": "ex:DP_Time_0",
       "type": "oce:DataPoint",
-      "oce:refersTo": { "id": "ex:ReactionTime" },
       "oce:hasValue": {
         "id": "ex:Val_Time_0",
         "type": "oce:X",
+        "oce:refersTo": { "id": "ex:ReactionTime" },
         "oce:hasValue": { "@value": "0", "@type": "xsd:double" }
       }
     },
@@ -96,10 +96,10 @@
     {
       "id": "ex:DP_Flow_0",
       "type": "oce:DataPoint",
-      "oce:refersTo": { "id": "ex:FlowRate_A" }, 
       "oce:hasValue": {
         "id": "ex:Val_Flow_0",
         "type": "oce:X",
+        "oce:refersTo": { "id": "ex:FlowRate_A" }, 
         "oce:hasValue": { "@value": "0.0", "@type": "xsd:double" }
       }
     }
