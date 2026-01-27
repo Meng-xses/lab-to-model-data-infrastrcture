@@ -24,7 +24,7 @@
     {
       "id": "./",
       "type": "Dataset",
-      "name": "one-row dataset of xk212 experiment with K1",
+      "name": "CC0-0.0",
       "description": "Semantic one-row time-flowrate data for ZnO production with K1-ractor-system",
       "hasPart": [ { "id": "ex:XK212-GMS-1-1reaction" } ]
     },
