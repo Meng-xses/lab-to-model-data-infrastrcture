@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://w3id.org/ro/crate/1.1/context",
+    "https://w3id.org/ro/crate/1.2/context",
     {
       "oce": "http://www.theworldavatar.com/ontology/ontochemexp/OntoChemExp.owl#",
       "or": "http://www.theworldavatar.com/ontology/ontoreaction/OntoReaction.owl#",
@@ -28,7 +28,7 @@
       "hasPart": [ { "@id": "ex:XK212-GMS-1-1reaction" } ]
     },
     {
-      "@": "ex:XK212-GMS-1-1reaction",
+      "@id": "ex:XK212-GMS-1-1reaction",
       "@type": "oce:Experiment",
       "schema:isBasedOn": { "@id": "ex:GMS_Reaction" },
       "oce:hasApparatus": { "@id": "ex:K1_Reaction_System" },
@@ -50,7 +50,7 @@
     {
       "@id": "ex:ReactionTime",
       "@type": "oce:Time",
-      "om:hasUnit": { "@id": "om:second-Time", "rdfs:label": "second" }
+      "om:hasUnit": { "@id": "om:second", "rdfs:label": "second" }
     },
     {
       "@id": "ex:DP_Time_0",
